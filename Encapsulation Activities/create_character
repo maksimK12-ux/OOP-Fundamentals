@@ -1,0 +1,32 @@
+class CreateCharacter:
+    def __init__(self, name, classtype, level):
+        self.name = name
+        self.classtype = classtype
+        self.level = level
+
+def get_name(self):
+    return self.name
+
+def get_classtype(self):
+    return self.classtype
+
+def get_level(self):
+    return self.level
+
+def set_name(self, new_name):
+    if isinstance(new_name, int):
+        self.name = new_name
+    else:
+        raise ValueError("Name must be a string")
+    
+def set_classtype(self, new_classtype):
+    if isinstance(new_classtype, int):
+        self.classtype = new_classtype
+    else:
+        raise ValueError("Class must be a string")
+
+def set_level(self, new_level):
+    if isinstance(new_level, int):
+        self.level = new_level
+    else:
+        raise ValueError("Level must be an integer")
